@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="InetBankingV2">
+
+	<listeners>
+		<listener class-name="com.inetbanking.utilities.Reporting" />
+	</listeners>
+
+	<test name="BankingApp V2 Test Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			 <class name="com.inetbanking.testCases.TC_LoginTest_001" /> 
+			  <class name="com.inetbanking.testCases.TC_ResetTest_002" />
+			 <class name="com.inetbanking.testCases.TC_LoginTestDDT_003" />  
+		</classes>
+
+	</test> 
+	
+	<!--
+	<test name="BankingApp V2 Test FF">
+		<parameter name="browser" value="firefox" />
+		<classes>
+				<class name="com.inetbanking.testCases.TC_LoginTest_001" /> 
+			 	<class name="com.inetbanking.testCases.TC_ResetTest_002" /> 
+				<class name="com.inetbanking.testCases.TC_LoginTestDDT_003" />
+		</classes>
+
+	</test>  -->
+
+</suite>
